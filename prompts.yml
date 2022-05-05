@@ -9,6 +9,11 @@ package_author:
   text: |
     Please enter a project author's name.
 
+github_username:
+  title: "GitHub User Name:"
+  text: |
+    Please enter GitHub user name.
+
 repo_name:
   title: "Repository Name:"
   text: |
@@ -31,11 +36,6 @@ python_package:
   error_message: |
     It must start with a letter or underscore, be at least 2 characters long
     and contain only letters, digits, and/or underscores.
-
-github_username:
-  title: "GitHub User Name:"
-  text: |
-    Please enter GitHub user name.
 
 github_fqdn:
   title: "GitHub FQDN:"

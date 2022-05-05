@@ -2,9 +2,9 @@
     "project_name": "New Python Project",
     "package_author": "Oga Akihiro",
     "package_author_email": "sample@sample.com",
+    "github_username": "oga-a",
     "repo_name": "{{ cookiecutter.project_name.replace(' ', '_').lower().strip('-') }}",
     "python_package": "{{ cookiecutter.repo_name }}",
-    "github_username": "oga-a",
     "github_fqdn": "github.com",
     "docs_url": "https://{{ cookiecutter.github_username }}.github.io/{{ cookiecutter.repo_name }}"
 }

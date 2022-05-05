@@ -21,9 +21,9 @@ cookiecutter https://github.com/oga-a/cct_python
 project_name: プロジェクトの名前
 package_author: パッケージ管理者名
 package_author_email: パッケージ管理者メール
+github_username: GitHubアカウント名
 repo_name: レポジトリ名
-python_package: パッケージ名
-github_username: GitHubユーザー名
+python_package: Pythonパッケージ名
 github_fqdn: GitHubがEnterprise版だったら変更
 docs_url: パッケージ用ドキュメントURL
 ```
@@ -33,13 +33,14 @@ docs_url: パッケージ用ドキュメントURL
 cd `repo_name`
 ```
 
-GitHubにpush
+アカウント名`github_username`でリポジトリ名が`repo_name`のGitHubにpush
 
 ```bash
 git init
 git add .
 git commit -m "initial commit"
-git push
+git remote add origin git@`github_fqdn`:`github_username`/`repo_name`.git
+git push --set-upstream origin master
 ```
 
 ## How to develop this project
