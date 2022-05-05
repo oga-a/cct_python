@@ -1,0 +1,55 @@
+[tool.poetry]
+name = "{{ cookiecutter.python_package }}"
+version = "0.0.1"
+description = ""
+authors = ["{{ cookiecutter.package_author }} <{{ cookiecutter.package_author_email }}>"]
+
+[tool.poetry.dependencies]
+python = ">=3.7,<3.11"
+omegaconf = "^2.1.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+pytest-cov = "^3.0.0"
+codecov = "^2.1.12"
+black = "^21.12b0"
+isort = "^5.10.1"
+flake8 = "^4.0.1"
+pyproject-flake8 = "^0.0.1-alpha.2"
+mypy = "^0.910"
+Sphinx = "^4.2.0"
+sphinx-autobuild = "^2021.3.14"
+sphinx-copybutton = "^0.4.0"
+sphinx-autodoc-typehints = "^1.15.0"
+recommonmark = "^0.7.1"
+nbsphinx = "^0.8.8"
+furo = "^2021.9.22"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+filterwarnings = [
+    "ignore::DeprecationWarning"
+]
+
+[tool.black]
+skip-magic-trailing-comma = true
+
+[tool.isort]
+profile = 'black'
+force_single_line = true
+
+[tool.flake8]
+max-line-length = 88
+extend-ignore = "E203,"
+
+[tool.mypy]
+python_version = 3.8
+warn_return_any = true
+warn_unused_configs = true
+
+[[tool.mypy.overrides]]
+module = []
+ignore_missing_imports = true
