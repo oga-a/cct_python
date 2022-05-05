@@ -23,3 +23,5 @@ github_username: GitHubユーザー名
 github_fqdn: GitHubがEnterprise版だったら変更
 docs_url: パッケージ用ドキュメントURL
 ```
+
+作成後はpoetryを使ってパッケージ開発
