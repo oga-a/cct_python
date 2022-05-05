@@ -22,6 +22,32 @@ python_package: パッケージ名
 github_username: GitHubユーザー名
 github_fqdn: GitHubがEnterprise版だったら変更
 docs_url: パッケージ用ドキュメントURL
+
+# プロジェクトフォルダに移動
+cd `repo_name`
+
+# GitHubにpush
+git init
+git add .
+git commit -m "initial commit"
+git push
 ```
 
 作成後はpoetryを使ってパッケージ開発
+
+```bash
+poetry install
+poetry add numpy==1.21.6
+```
+
+実行できるか確認
+
+```bash
+poetry shell
+python
+```
+
+```python
+import `project_name`
+print(`project_name`.__version__)
+```

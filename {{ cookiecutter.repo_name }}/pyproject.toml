@@ -5,7 +5,7 @@ description = ""
 authors = ["{{ cookiecutter.package_author }} <{{ cookiecutter.package_author_email }}>"]
 
 [tool.poetry.dependencies]
-python = ">=3.7,<3.11"
+python = ">=3.7.12,<3.11"
 omegaconf = "^2.1.0"
 
 [tool.poetry.dev-dependencies]
