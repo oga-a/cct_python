@@ -48,6 +48,6 @@ python
 ```
 
 ```python
-import `project_name`
-print(`project_name`.__version__)
+import `python_package`
+print(`python_package`.__version__)
 ```
