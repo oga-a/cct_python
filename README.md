@@ -6,11 +6,15 @@ Pythonパッケージ作成用のcookiecutterテンプレート
 
 ## How to use this template
 
-```bash
-# cookiecutterをinstall
-pip install cookiecutter
+cookiecutterをinstall
 
-# templateを用いてprojectを作成
+```bash
+pip install cookiecutter
+```
+
+templateを用いてprojectを作成
+
+```bash
 cookiecutter https://github.com/oga-a/cct_python
 
 # 適当に入力する
@@ -22,16 +26,23 @@ python_package: パッケージ名
 github_username: GitHubユーザー名
 github_fqdn: GitHubがEnterprise版だったら変更
 docs_url: パッケージ用ドキュメントURL
+```
 
-# プロジェクトフォルダに移動
+プロジェクトフォルダに移動
+```bash
 cd `repo_name`
+```
 
-# GitHubにpush
+GitHubにpush
+
+```bash
 git init
 git add .
 git commit -m "initial commit"
 git push
 ```
+
+## How to develop this project
 
 作成後はpoetryを使ってパッケージ開発
 
