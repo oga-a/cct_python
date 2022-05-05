@@ -22,7 +22,7 @@ project_name: プロジェクトの名前
 package_author: パッケージ管理者名
 package_author_email: パッケージ管理者メール
 github_username: GitHubアカウント名
-repo_name: レポジトリ名
+repo_name: リポジトリ名
 python_package: Pythonパッケージ名
 github_fqdn: GitHubがEnterprise版だったら変更
 docs_url: パッケージ用ドキュメントURL
