@@ -147,3 +147,12 @@ dmypy.json
 
 # Cython debug symbols
 cython_debug/
+
+.vscode/
+info.log
+
+# IntelliJ
+.idea/
+*.iml
+out/
+.idea_modules/
